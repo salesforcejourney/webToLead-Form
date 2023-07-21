@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Quick Lead Creation</h1>
+    <form
+      action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+      method="POST"
+      onsubmit="beforeSumbit()"
+    >
+      <input type="hidden" name="oid" value="00DN0000000cniF" />
+      <input type="hidden" name="Lead_Date__c" id="Lead_Date__c" />
+      <input
+        type="hidden"
+        name="retURL"
+        value="https://trailhead.salesforce.com/"
+      />
+
+      <label for="first_name">First Name</label
+      ><input
+        id="first_name"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+        required="true"
+      />
+
+      <label for="last_name">Last Name</label
+      ><input
+        id="last_name"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+        required="true"
+      />
+
+      <label for="email">Email</label
+      ><input
+        id="email"
+        required="true"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+      />
+
+      <label for="date-of-birth">Lead Date</label
+      ><input id="date-of-birth" name="leaddate" size="20" type="date" />
+
+      <!-- Lead Date:<span class="dateInput dateOnlyInput"
+        ><input
+          id="00NN000000KkNTP"
+          name="00NN000000KkNTP"
+          size="12"
+          type="text"
+      /></span> -->
+
+      <input type="submit" name="submit" />
+    </form>
+  </body>
+</html>

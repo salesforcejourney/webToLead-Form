@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Defines how the width and height of an element are calculated */
+}
+h1 {
+  text-align: center;
+}
+label,
+input {
+  display: block;
+}
+label {
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+}
+form {
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px auto; /*top right bottom left*/
+  border: 2px solid black;
+  padding: 10px;
+}
+input[type="submit"] {
+  margin: 10px auto 0 auto;
+  width: 40%;
+}
